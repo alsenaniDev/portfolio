@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #1E1E1E;
+    --color-small-sidebar: #333333;
+    --color-larg-sidebar: #252526;
+    --color-navbar: #3C3C3C;
+    --color-icons: #7E8082;
+
+    --color-text: #FFFFFF;
+    --font-mono: "IBM Plex Mono", monospace;
+    --font-tajawal: "Tajawal", monospace;
+}
+
+.nav-link-item i {
+    color: var(--color-icons);
+    font-size: 20px;
+}
+
+.nav-link-item.bg-larg-sidebar i {
+    color: var(--color-text);
+}
+
+.dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: var(--color-primary);
+}

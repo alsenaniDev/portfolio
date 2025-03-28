@@ -1,0 +1,27 @@
+<div class="bg-small-sidebar w-13 h-dvh">
+    <div class="flex flex-col items-center">
+        <div (click)="geToPage('/')"
+            [ngClass]="{ 'bg-larg-sidebar': isActive('/') }"
+            class="cursor-pointer h-12 w-full flex justify-center items-center hover:bg-primary nav-link-item">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div (click)="geToPage('/education')"
+            [ngClass]="{ 'bg-larg-sidebar': isActive('/education') }"
+            class="cursor-pointer h-12 w-full flex justify-center items-center hover:bg-primary nav-link-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <div (click)="geToPage('/experiences')"
+            [ngClass]="{ 'bg-larg-sidebar': isActive('/experiences') }"
+            class="cursor-pointer h-12 w-full flex justify-center items-center hover:bg-primary nav-link-item">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+
+        <div (click)="geToPage('/projects')"
+            [ngClass]="{ 'bg-larg-sidebar': isActive('/projects') }"
+            class="cursor-pointer h-12 w-full flex justify-center items-center hover:bg-primary nav-link-item">
+            <i class="fa-solid fa-code"></i>
+        </div>
+    </div>
+</div>
